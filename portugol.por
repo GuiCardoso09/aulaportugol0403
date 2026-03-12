@@ -1,6 +1,6 @@
 programa
 {
-	
+	//Fechamento de nota
 	funcao inicio()
 	{
 		escreva("Notas bimestrais \n")
@@ -36,8 +36,130 @@ programa
 
 		senao {
 			escreva("Que pena, aluno de recuperação...")
+			escreva("Ordenar para o aluno retido comparecer nos dias de recuperação.\nSe ele não comparecer, ele será reprovado")
 		}
+
+//se não e se (aula 2)
+
+		inteiro num
+
+		escreva("Digite um número: ")
+		leia(num)
+		se (num>=10) {
+			escreva("Correto, valor igual ou maior que 10")
+		}
+		senao {
+		escreva("Errado, pois é menor que 10. \nEscreva novamente algo igual ou maior que 10: ")
+
+		leia(num)
+		se (num>=10) 
+		escreva("Exato, é um número igual ou maior que 10!")
+		se (num<10) 
+			escreva("Errado, escreva algo maior que isto")
+		}
+
+
+//cadeia: serve quando for escrito nomes muito grandes
+	//inteiro: principal
+	//real (aula 3)
 	
+
+		cadeia nome1
+		cadeia bairro
+		inteiro idade
+		real salario
+		caracter opcao
+		
+		escreva("Digite o seu nome: ")
+		leia(nome1)
+		escreva("Digite a sua idade: ")
+		leia(idade)
+		escreva("Digite o seu bairro: ")
+		leia(bairro)
+		escreva("Digite o seu salário: ")
+		leia(salario)
+		escreva("Nome: ",nome1, ";\nSalário: ",salario, ";\nBairro: ",bairro, ";\nIdade: ",idade)
+		escreva(";\nNovo salário: ")
+		se(salario<=2000) {
+		escreva(salario+350).
+		}
+
+		senao {
+		escreva(salario+100)
+		}
+//contas diferentes, mesma variável (aula 4)
+
+		inteiro A
+		inteiro B
+
+		escreva("Digite A: ")
+		leia(A)
+		escreva("\nDigite B: ")
+		leia(B)
+		inteiro soma = A+B
+		inteiro vezes =A*B
+		inteiro C=soma
+		inteiro c=vezes
+		
+		se (A == B) {
+	
+		escreva("C: ",C)
+	}
+		senao {
+		escreva("C: ",c)
+	}
+//senao se...
+	{
+	inteiro num
+	
+	escreva("Digite um número de 1 a 5: ")
+	leia(num)
+	se (num==1) {
+		escreva("Número digitado é 1.")
+	}
+	senao se (num==2) {
+		escreva("Número digitado é 2.")
+	}
+	senao se (num==3) {
+		escreva("Número digitado é 3.")
+	}
+	senao se (num==4){
+		escreva("Número digitado é 4.")
+	}
+	senao se (num==5) {
+		escreva("Número digitado é 5")
+	
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -45,7 +167,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 704; 
+ * @POSICAO-CURSOR = 1940; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -131,14 +131,60 @@ programa
 	
 	}
 
+//tabuada básica...
+	{
+		inteiro ntab = 3, num = 0
+
+		enquanto (num <=10){
+			escreva(num, "x", ntab, "=", num*ntab, "\n")
+			num = num + 1
+		}
+	}
+
+
+	real valor
+		caracter mtd
+		
+		escreva("Qual valor deverá ser pago?: ")
+		leia(valor)
+		escreva("Qual a forma de pagamento?: ")
+		leia(mtd)
+		se (mtd == "Dinheiro" ou "Pix: ")
+			escreva("Valor a ser pago: ", valor*0.85)
+		}
+	 	senao se (mtd == "A vista no cartão"){
+			escreva("Valor a ser pago: ", valor*0.90)
+	 	}
+		senao se (mtd == "Parcelado em duas vezes"){
+			escreva("Valor a ser pago: "valor)
+		}
+
+		
+		cadeia sigla
+
+		escreva("Digite a sigla de um certo estado: ")
+		leia(sigla)
+		se(sigla == "sp" ou sigla == "SP"){
+			escreva("São Paulo")
+		}
+		senao se (sigla == "rj" ou sigla =="RJ")
+			escreva("Rio de Janeiro")
+		senao se (sigla == "ba" ou sigla == "BA")
+			escreva("Bahia")
+		senao escreva("Estado Inválido")
+	}	
+inteiro contador 
+
+	/* FOR*/	para (contador = 1; contador <= 10; contador++) 
+		{
+			escreva(contador, "\n") 
+		}
+	}
 
 
 
 
-
-
-
-
+.
 
 
 
@@ -167,7 +213,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1940; 
+ * @POSICAO-CURSOR = 3646; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -3,6 +3,18 @@ programa
 	//Fechamento de nota
 	funcao inicio()
 	{
+		Atv1()
+		Atv2()
+		Atv3()
+		Atv4()
+		Atv5()
+		Atv6()
+		Atv7()
+		Atv8()
+		Atv9()
+	}		
+	funcao Atv1()	
+	{	
 		escreva("Notas bimestrais \n")
 		inteiro PrimeiroBim
 		inteiro SegundoBim
@@ -25,7 +37,7 @@ programa
 
 		escreva("\nNota Primeiro Semestre: ", PrimeiroBim+SegundoBim+TerceiroBim)
 		inteiro soma = PrimeiroBim + SegundoBim + TerceiroBim
-		real media = soma /3
+		real media = soma/3
 		
 		escreva("\n Média Final: ", media)
 		escreva("\nDigite a média : ")
@@ -38,10 +50,12 @@ programa
 			escreva("Que pena, aluno de recuperação...")
 			escreva("Ordenar para o aluno retido comparecer nos dias de recuperação.\nSe ele não comparecer, ele será reprovado")
 		}
+	}
 
 //se não e se (aula 2)
-
-		inteiro num
+	funcao Atv2()
+		{
+			inteiro num
 
 		escreva("Digite um número: ")
 		leia(num)
@@ -57,12 +71,13 @@ programa
 		se (num<10) 
 			escreva("Errado, escreva algo maior que isto")
 		}
-
+		}
 
 //cadeia: serve quando for escrito nomes muito grandes
 	//inteiro: principal
 	//real (aula 3)
-	
+	funcao Atv3()
+	{
 
 		cadeia nome1
 		cadeia bairro
@@ -81,14 +96,16 @@ programa
 		escreva("Nome: ",nome1, ";\nSalário: ",salario, ";\nBairro: ",bairro, ";\nIdade: ",idade)
 		escreva(";\nNovo salário: ")
 		se(salario<=2000) {
-		escreva(salario+350).
+		escreva(salario+350)
 		}
 
 		senao {
 		escreva(salario+100)
 		}
+	}
 //contas diferentes, mesma variável (aula 4)
-
+	funcao Atv4()
+	{
 		inteiro A
 		inteiro B
 
@@ -108,8 +125,11 @@ programa
 		senao {
 		escreva("C: ",c)
 	}
+	}
 //senao se...
+	funcao Atv5()
 	{
+		
 	inteiro num
 	
 	escreva("Digite um número de 1 a 5: ")
@@ -128,10 +148,11 @@ programa
 	}
 	senao se (num==5) {
 		escreva("Número digitado é 5")
-	
+	}
 	}
 
 //tabuada básica...
+	funcao Atv6()
 	{
 		inteiro ntab = 3, num = 0
 
@@ -141,25 +162,28 @@ programa
 		}
 	}
 
-
+	funcao Atv7()
+	{
 	real valor
-		caracter mtd
+		cadeia mtd
 		
 		escreva("Qual valor deverá ser pago?: ")
 		leia(valor)
 		escreva("Qual a forma de pagamento?: ")
 		leia(mtd)
-		se (mtd == "Dinheiro" ou "Pix: ")
+		se (mtd == "Dinheiro") se (mtd == "Pix"){
 			escreva("Valor a ser pago: ", valor*0.85)
 		}
 	 	senao se (mtd == "A vista no cartão"){
 			escreva("Valor a ser pago: ", valor*0.90)
 	 	}
 		senao se (mtd == "Parcelado em duas vezes"){
-			escreva("Valor a ser pago: "valor)
+			escreva("Valor a ser pago: ", valor)
 		}
+	}
 
-		
+		funcao Atv8()
+		{
 		cadeia sigla
 
 		escreva("Digite a sigla de um certo estado: ")
@@ -172,48 +196,27 @@ programa
 		senao se (sigla == "ba" ou sigla == "BA")
 			escreva("Bahia")
 		senao escreva("Estado Inválido")
-	}	
+	}
+
+		funcao Atv9()
+		{
 inteiro contador 
 
 	/* FOR*/	para (contador = 1; contador <= 10; contador++) 
 		{
 			escreva(contador, "\n") 
 		}
-	}
 
-
-
-
-.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		}
 
 
 	}
-}
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 3646; 
+ * @POSICAO-CURSOR = 2863; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

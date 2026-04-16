@@ -209,6 +209,86 @@ inteiro contador
 
 		}
 
+		funcao Atv10()
+	{
+	inteiro idade[4]
+
+	escreva("Começo do Vetor: \n")
+	para(inteiro i=0; i < 4; i++){
+		leia(idade[i])
+	}
+	escreva("Kodshfjyugwfhjwreft: ")
+	para(inteiro i=0; i < 4; i++){
+		escreva("\nEste é o vetor do momento: ", idade[i])
+	}
+
+	
+	}
+
+	funcao Matriz()
+	{
+		inteiro matriz[3][2]
+
+		matriz[0][0]=10
+		matriz[0][1]=5
+		matriz[1][1]=10
+		matriz[1][0]=5
+		matriz[2][1]=10
+		matriz[1][2]=5
+
+		escreva(matriz[0][1])
+
+		escreva ("\n")
+		escreva(matriz[1][1])
+	}
+	funcao Atv12()
+	{
+		inteiro idade [2]
+		cadeia nome[1]
+		inteiro telefone[3]
+		cadeia rua[4]
+		cadeia bairro[5]
+		
+		
+			escreva("nome: ")
+			leia(nome[n])
+			escreva("\nDigite a idade: ")
+			leia(idade[n])
+			escreva("\nRua: ")
+			leia(rua[n])
+			escreva("\nBairro: ")
+			leia(bairro[n])
+			escreva("\nTelefone: ")
+			leia(telefone[n])
+		}
+		
+	funcao Atv13()
+	{
+		inteiro idade [9]
+		cadeia nome[9]
+		inteiro n=0
+		enquanto(n<=10){
+			escreva("nome: ")
+			leia(nome[n])
+			escreva("\nDigite a idade: ")
+			leia(idade[n])
+			n++		 
+		}
+escreva(nome[1], " ", idade[1])
+escreva(nome[3], " ", idade[3])
+		
+	}
+
+		funcao inicio()
+	{
+		inteiro num
+		escreva("Digite a quantidade de alunos da sala: ")
+		leia(num)
+		inteiro i=num
+		i
+		
+	}
+
 
 	}
 /* $$$ Portugol Studio $$$ 
@@ -216,7 +296,7 @@ inteiro contador
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2863; 
+ * @POSICAO-CURSOR = 4918; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

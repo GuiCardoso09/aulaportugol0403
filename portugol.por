@@ -229,15 +229,15 @@ inteiro contador
 	{
 		inteiro matriz[3][2]
 
-		matriz[0][0]=10
+		matriz[0][0]=20
 		matriz[0][1]=5
 		matriz[1][1]=10
 		matriz[1][0]=5
 		matriz[2][1]=10
-		matriz[1][2]=5
+		matriz[2][1]=5
 
 		escreva(matriz[0][1])
-
+	//escreva("[", matriz[linha][coluna], "]") // Exibe o valor contido na posição da matriz
 		escreva ("\n")
 		escreva(matriz[1][1])
 	}
@@ -289,6 +289,42 @@ escreva(nome[3], " ", idade[3])
 		
 	}
 
+inteiro num=-0
+		inteiro i
+		para(i=0 ; i<=10 ;i++){
+			escreva("Número na ordem crescente: ", i, "\n")
+		}
+
+inteiro cod[10]
+		cadeia desc[10]
+		inteiro quant[10]
+		real ValUn[10]
+		inteiro opcao
+	funcao inicio()
+	{
+		inteiro i=0
+		escreva("Digite o código do produto: ")
+		leia (cod[i])
+		escreva("Digite qual é o produto: ")
+		leia (desc[i])
+		escreva("Digite quantas unidades deseja do produto (se for um par, digite quantos pares): ")
+		leia (quant[i])
+		escreva("Digite o valor do produto: ")
+		leia (ValUn[i])
+		escreva("Deseja continuar? Se sim, digite 1, se não, digite dois.\n")
+		leia(opcao)
+		para(i=0;i < 2; i++){
+		}
+		se (opcao==1){
+	retorno
+		}
+		se (opcao==2){
+			escreva("Ok")
+		}
+}
+
+
+
 
 	}
 /* $$$ Portugol Studio $$$ 
@@ -296,9 +332,9 @@ escreva(nome[3], " ", idade[3])
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 4918; 
+ * @POSICAO-CURSOR = 5290; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
+ * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, vazio;
+ * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz;
  */
